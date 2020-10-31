@@ -1,0 +1,26 @@
+name: social_feed_share
+description: Lightsnap - Share Instagram and Facebook feed posts
+version: 1.0.0
+author: Lightsnap Inc.
+homepage: https://lightsnap.app
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.20.0 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.lightsnap.flutter.socialfeedshare.social_feed_share
+        pluginClass: SocialFeedSharePlugin
+      ios:
+        pluginClass: SocialFeedSharePlugin
